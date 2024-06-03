@@ -1,0 +1,85 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="container">
+    <div class="row p-1">
+        <div class="col-1">User</div>
+        <div class="col-5"><input type="text" id="userInput" /></div>
+    </div>
+    
+    <div class="row p-1">
+        <div class="col-1">Message</div>
+        <div class="col-5"><input type="text" class="w-100" id="messageInput" /></div>
+    </div>
+  
+
+    <div class="row p-1">
+        <div class="col-1">Group Name</div>
+        <div class="col-5"><input type="text" class="w-100" id="groupName" /></div>
+    </div>
+
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="button" id="joinButton" value="Join" />
+        </div>
+    </div>
+
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="button" id="ndButton" value="Send ;;" />
+        </div>
+    </div>
+
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="button" id="sendGroupButton" value="Send To Group" />
+        </div>
+    </div>
+    <hr />
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="text" id="senderIdInput" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="text" id="targetUserIdInput"  />
+        </div>
+    </div>
+
+    <div class="row p-1">
+        <div class="col-1">Message</div>
+        <div class="col-5"><input type="text" class="w-100" id="messageInputt" /></div>
+    </div>
+
+
+    <div class="row p-1">
+        <div class="col-6">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+@* <script src="~/js/signalr/dist/browser/signalr.js"></script> *@
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+
+<script src="~/js/site.js"></script>
